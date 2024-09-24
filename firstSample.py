@@ -82,9 +82,28 @@ print(v * 2)
 
 # compare string
 # escape characters /n and /t
-t = "wonderful"
+t = "wonderful day daftari"
 print (t.count("day"))
 print("daftari" in t)
 print(t[::-1])
 
+#check if enter value is digit
+###
+#entername = input("what is your age: ")
+#if entername.isdigit():
+#    print(entername)
+#else:
+#    print("not a digit")
 
+greeting = "Good {}, {}."
+time = "morning"
+secondname = "shikhar"
+print(greeting.format(time,secondname))
+
+
+# Practice list
+fruit = ["grapes", "papaya", "orange", "aaple"]
+veg = ["carrot", "peas", "tomato", "potato"]
+both = fruit + veg
+print(both.count("peas"))
+print("carrot" in veg)

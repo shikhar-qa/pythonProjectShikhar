@@ -1,0 +1,27 @@
+1. Absolute XPath:
+This specifies the full, exact path to an element, starting from the top of the HTML document.
+For example: /html/body/div[2]/table/tr[3]/td[4]
+
+2. Relative XPath:
+This allows you to locate elements based on their attributes, without needing the full path.
+For example: //input[@type='text' and @name='username']
+
+3. Wildcard XPath:
+This uses the * symbol as a wildcard to match any element, making it easier to find elements with dynamic or changing attributes.
+For example: //*[contains(@class, 'button')]
+
+4. Indexed XPath:
+This helps you target a specific element within a group of matching elements, using the index position.
+For example: (//div[@class='item'])[3]
+
+5. Sibling XPath:
+This lets you select elements that are at the same level as your target element.
+For example: //h1/following-sibling::p[1]
+
+6. Parent XPath:
+This allows you to select the parent element of your target.
+For example: //div[@id='container']/parent::body
+
+7. Ancestor XPath:
+This lets you select any ancestor (parent, grandparent, etc.) element of your target.
+For example: //div[@id='content']//h2/ancestor::div
