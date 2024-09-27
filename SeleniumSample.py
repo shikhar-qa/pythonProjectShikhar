@@ -15,6 +15,7 @@ browser.maximize_window()
 
 class Loginpage():
 
+
     def verify_login_valid_user(self, uname, passwd):
         testcase = "Verify to login with valid user"
         result = ""
@@ -37,7 +38,6 @@ class Loginpage():
 
             browse_btn = browser.find_element("id", "react-burger-menu-btn")
             browse_btn.click()
-
             logout_btn = browser.find_element("id", "logout_sidebar_link")
             logout_btn.click()
             result = "PASS"
@@ -51,3 +51,4 @@ class Loginpage():
 objloginpage = Loginpage()
 status = objloginpage.verify_login_valid_user("standard_user", "secret_sauce")
 print(status['testcase'] + ": " + status['result'])
+
