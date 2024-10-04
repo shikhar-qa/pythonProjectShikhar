@@ -1,4 +1,5 @@
 #This is a python practice file, it has sample problem and solution
+from importlib.readers import remove_duplicates
 from math import factorial
 
 # Sample 1: Reverse a String
@@ -67,7 +68,7 @@ def checkevenodd(num):
 
 # Sample 6: prime number check
 def checkprimenumber(sample):
-    print("\n************ Sample 5: prime number check *************")
+    print("\n************ Sample 6: prime number check *************")
     for i in range(2,sample):
         if sample % i:
             print(str(sample) + " is a prime number")
@@ -78,6 +79,7 @@ def checkprimenumber(sample):
 
 # Sample 7: Count Vowels and Consonants
 def count_vowels_conso(sample):
+    print("\n************ Sample 7: Count Vowels and Consonants *************")
     vowels = ['a', 'e', 'i', 'o', 'u']
     vowelscount = 0
     for i in vowels:
@@ -86,6 +88,29 @@ def count_vowels_conso(sample):
     consonants =  len(sample) - vowelscount
     print("consonants count : " + str(consonants))
 
+# Sample 8: Sort an Array
+def sortlist (samplelist):
+    print("\n************ Sample 8: Sort an array *************")
+    samplelist.sort()
+    #print(samplelist)
+    x = sorted(samplelist)
+    print(x)
 
+# Sample 9: Find largest element in an array
+def findlargestnumber (samplelist):
+    largestnum = samplelist[0]
+    for x in samplelist:
+        if x > largestnum:
+            largestnum = x
+    print("Largest number: ",  largestnum)
+    print("Largest number using built-in function: ",  max(samplelist))
 
+# Sample 10: Remove duplicate
+def removeduplicate():
+    samplelist = [20,28,21,20,21]
+    uniquelist = []
+    for x in samplelist:
+        if x not in uniquelist:
+            uniquelist.append(x)
+    print(uniquelist)
 

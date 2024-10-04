@@ -19,7 +19,7 @@ def findMin(listArg):
     for m in listArg:
         if m < minNum:
             minNum = m
-    #print("Min number: " + str(minNum))
+    print("Min number: " + str(minNum))
     return minNum
 
 minNum = findMin(li)
