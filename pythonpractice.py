@@ -114,3 +114,11 @@ def removeduplicate():
             uniquelist.append(x)
     print(uniquelist)
 
+# Sample 11: Check anagram
+def checkanagram(samplestring1, samplestring2):
+    str1 = sorted(samplestring1)
+    str2 = sorted(samplestring2)
+    if str1 == str2:
+        print("Strings are anagram")
+    else:
+        print("Strings are not anagram")

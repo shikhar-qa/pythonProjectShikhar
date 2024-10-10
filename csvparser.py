@@ -6,7 +6,14 @@ try:
     with open('samplecsv.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            print(row['Name'], row['City'], row['Country'])
+            if not row['Name']:
+                print("Name is missing")
+            elif not row['Email']:
+                print("Email is missing")
+            elif not row['DOB']:
+                print("DOB is missing")
+            else:
+                print(row['Name'], row['Email'], row['DOB'])
 except Exception as e:
     print(e)
 
